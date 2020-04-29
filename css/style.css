@@ -472,14 +472,14 @@ body:after {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: #808080; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #0000F8; }
+        color: #000; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li .active {
-        color: #0000F8; }
+        color: #000; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -558,7 +558,7 @@ body:after {
   .sticky-wrapper .site-navbar .site-logo a {
     color: #000;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
    }
   .sticky-wrapper .site-navbar .site-menu > li > a {
@@ -583,6 +583,12 @@ body:after {
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
+
+@media (max-width: 500px) {
+  .sticky-wrapper .site-navbar .site-logo a {
+
+}
+}
 
 /* Blocks */
 .site-blocks-cover {
