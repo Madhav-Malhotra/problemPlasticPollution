@@ -133,7 +133,8 @@ body:after {
 
 .site-footer {
   padding: 4em 0;
-  background: #333333; }
+  background: #FFF;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.4); }
   @media (min-width: 768px) {
     .site-footer {
       padding: 3em 0; } }
@@ -144,9 +145,9 @@ body:after {
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
     color: #fff; }
   .site-footer a {
-    color: #999999; }
+    color: #42BFDD; }
     .site-footer a:hover {
-      color: white; }
+      color: #1D84B5; }
   .site-footer ul li {
     margin-bottom: 10px; }
   .site-footer .footer-heading {
@@ -472,14 +473,14 @@ body:after {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #808080; }
+      color: rgb(0,0,0,0.5); }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #000; }
+        color: #06316A; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li .active {
-        color: #000; }
+        color: #06316A; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -562,31 +563,31 @@ body:after {
     text-transform: uppercase;
    }
   .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(0, 0, 0, 0.7) !important; }
+    color: rgba(0, 0, 0, 0.5) !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
-      color: #000 !important; }
+      color: #06316A !important; }
   .sticky-wrapper.is-sticky .site-navbar {
     background: #fff;
     border-bottom: 1px solid transparent;
-    -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6);
-    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6); }
+    -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.5); }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
       color: #000; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
       color: #000; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-      color: #000 !important;
+      color: rgb(0,0,0,0.5) !important;
       padding: 20px 20px;
       opacity: 0.8; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-        color: #000 !important; opacity: 1.0; }
+        color: #06316A !important; opacity: 1.0; }
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
 
 @media (max-width: 500px) {
   .sticky-wrapper .site-navbar .site-logo a {
-
+    height: 4em;
 }
 }
 
@@ -623,7 +624,7 @@ body:after {
       margin-top: 30%; } }
   .site-blocks-cover h1 {
     font-size: 4rem;
-    color: #000;
+    color: #06316A;
     font-weight: 900;
     text-transform: uppercase; }
     @media (max-width: 991.98px) {
@@ -1822,7 +1823,9 @@ figure figcaption {
 /* New For Dogger */
 .heading-section h2 {
   text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: 900;
+  color: #06316A;
+ }
 
 .hover-1-wrap .hover-1 {
   position: relative;
@@ -1914,15 +1917,10 @@ figure figcaption {
   margin-bottom: 1rem;
   color: #000; }
 
-.trainers, .bg-primary {
-  color: #808080; }
-  .trainers .heading, .bg-primary .heading {
-    color: #000; }
-
-.trainer figure {
+.blog-entry figure {
   margin-bottom: 50px;
   position: relative; }
-  .trainer figure:before {
+  .blog-entry figure:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
@@ -1931,14 +1929,40 @@ figure figcaption {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 125px;
     position: absolute;
     z-index: -1; }
 
-.trainer:hover figure:before {
-  top: 10px;
+.blog-entry:hover figure:before {
+  top: 15px;
   left: 10px;
-  background: #808080; }
+  background: #1D84B5; }
+
+.trainers, .bg-primary {
+  color: #808080; }
+  .trainers .heading, .bg-primary .heading {
+    color: #06316A; }
+
+  .trainer figure {
+    margin-bottom: 50px;
+    position: relative; }
+    .trainer figure:before {
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out;
+      content: "";
+      background: #405a58;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1; }
+  
+  .trainer:hover figure:before {
+    top: 10px;
+    left: 10px;
+    background: #1D84B5; }
 
 .trainer h3 {
   font-size: 1.3rem;
@@ -1970,7 +1994,7 @@ figure figcaption {
       width: 30px;
       height: 30px;
       line-height: 27px;
-      border: 1px solid #0000F8;
+      border: 1px solid #1D84B5;
       text-align: center;
       font-size: 18px;
       top: -.7px;
@@ -1979,16 +2003,16 @@ figure figcaption {
     .block__76208 .accordion-item .heading > a[aria-expanded="true"]:before {
       font-family: 'icomoon';
       position: absolute;
-      content: "\f1b0";
+      content: "\f078";
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease;
-      background: #0000F8;
+      background: #1D84B5;
       color: #fff;
-      border: 1px solid #0000F8; }
+      border: 1px solid #1D84B5; }
     .block__76208 .accordion-item .heading > a[aria-expanded="false"]:before {
-      content: "\f1b0";
-      color: #ccc;
+      content: "\f078";
+      color: #1D84B5;
       font-family: 'icomoon';
       position: absolute;
       -webkit-transition: .3s all ease;
