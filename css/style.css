@@ -28,6 +28,10 @@ a.read {
   opacity: 0.8;
 }
 
+p {
+  font-size: large;
+}
+
 a.read:hover {
   color: #808080;
   opacity: 1.0;
@@ -39,6 +43,11 @@ h1, h2, h3, h4,
 
 h5, .h5 {
   color: #06316A;
+}
+
+ul.toggle {
+  list-style-type: none;
+  padding-inline-start: inherit;
 }
   
 emphasis {
@@ -785,7 +794,7 @@ body:after {
       display: inline-block;
       padding: 20px;
       font-size: 30px;
-      color: #000; }
+      color: #1D84B5; }
       .block-13 .owl-nav .owl-prev.disabled, .block-13 .owl-nav .owl-next.disabled, .slide-one-item .owl-nav .owl-prev.disabled, .slide-one-item .owl-nav .owl-next.disabled {
         opacity: .2; }
 
@@ -1882,13 +1891,33 @@ figure figcaption {
   .paws.white:before, .paws.white:after, .paws.white > span {
     color: #fff; }
 
-.video-img {
+.video-img-replaced figure:before {
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  content: "";
+  background: #405a58;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-img-replaced:hover figure:before {
+  top: 10px;
+  left: 10px;
+  background: #1D84B5;
+}
+
+.video-img-replaced {
   position: relative;
   display: block; }
-  .video-img > span {
+  .video-img-replaced > span {
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: #1D84B5;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -1896,9 +1925,9 @@ figure figcaption {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .video-img > span > span {
+    .video-img-replaced > span > span {
       font-size: 1rem;
-      color: #000;
+      color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1921,7 +1950,8 @@ figure figcaption {
   margin-bottom: 1rem;
   color: #000; }
 
-.blog-entry figure {
+  
+/* .blog-entry figure {
   margin-bottom: 50px;
   position: relative; }
   .blog-entry figure:before {
@@ -1933,14 +1963,14 @@ figure figcaption {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 125px;
+    height: 100%;
     position: absolute;
     z-index: -1; }
 
 .blog-entry:hover figure:before {
   top: 15px;
   left: 10px;
-  background: #1D84B5; }
+  background: #1D84B5; } */
 
 .trainers, .bg-primary {
   color: #808080; }
@@ -1980,7 +2010,7 @@ figure figcaption {
   -o-transition: .2s all ease-in-out;
   transition: .2s all ease-in-out; }
   .trainer .ul-social-circle li a span {
-    background: #fff;
+    background: #F8F9FA;
     color: #000; }
   .trainer .ul-social-circle li a:hover {
     top: -7px; }
@@ -2088,7 +2118,7 @@ figure figcaption {
       height: 2px; }
     .block-testimony-1 figure img {
       max-width: 100px;
-      border: 10px solid #0000F8; }
+      border: 4px solid #1D84B5; }
   .block-testimony-1 h3 {
     font-size: 18px; }
 
